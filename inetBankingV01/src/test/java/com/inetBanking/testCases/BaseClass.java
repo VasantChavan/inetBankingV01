@@ -8,6 +8,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
 import com.inetBanking.utilities.ReadConfig;
@@ -25,7 +26,7 @@ public class BaseClass {
 	
 	@Parameters("browser")
 	@BeforeClass
-	public void setUp(String br){		
+	public void setUp(@Optional("chrome")String br){		
 		logger = Logger.getLogger("ebanking");
 		PropertyConfigurator.configure("log4j.properties");
 		
