@@ -1,15 +1,14 @@
 package com.inetBanking.testCases;
 
 import java.io.File;
-import java.io.IOException;
 
+import java.util.concurrent.TimeUnit;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
@@ -53,6 +52,8 @@ public class BaseClass {
 			driver = new FirefoxDriver();
 
 		}
+		
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.get(baseUrl);
 
 	}
@@ -73,7 +74,7 @@ public class BaseClass {
 
 			FileUtils.copyFile(source, target);
 			
-			System.out.println("screenshots captured....");
+			System.out.println("screenshot captured....");
 			
 		} catch (Exception e) {
 

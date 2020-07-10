@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/0/1</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Jul 03 16:49:01 IST 2020</td>
+<td>Started on:</td><td>Wed Jul 08 18:40:58 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (382 ms)</td>
+<tr><td>Total time:</td><td>42 seconds (42245 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,25 +67,24 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.inetBanking.testCases.TC_LoginTest_001.setUp()'><b>setUp</b><br>Test class: com.inetBanking.testCases.TC_LoginTest_001</td>
+<td title='com.inetBanking.testCases.TC_LoginDDT_002.loginDDT()'><b>loginDDT</b><br>Test class: com.inetBanking.testCases.TC_LoginDDT_002</td>
 <td><div><pre>org.testng.TestNGException: 
-Parameter &apos;browser&apos; is required by @Configuration on method setUp but has not been marked @Optional or defined
-in C:\Users\vasant\AppData\Local\Temp\testng-eclipse-1505215046\testng-customsuite.xml
-	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
-	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:84)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:202)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:143)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:178)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+Method public void com.inetBanking.testCases.TC_LoginDDT_002.loginDDT(java.lang.String,java.lang.String) requires a @DataProvider named : LoginData
+	at org.testng.internal.Parameters.findDataProvider(Parameters.java:263)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:419)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1243)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:992)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1082)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
 	at org.testng.TestRunner.privateRun(TestRunner.java:778)
 	at org.testng.TestRunner.run(TestRunner.java:632)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
@@ -101,17 +100,16 @@ in C:\Users\vasant\AppData\Local\Temp\testng-eclipse-1505215046\testng-customsui
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1776957250", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1776957250'><pre>org.testng.TestNGException: 
-Parameter &apos;browser&apos; is required by @Configuration on method setUp but has not been marked @Optional or defined
-in C:\Users\vasant\AppData\Local\Temp\testng-eclipse-1505215046\testng-customsuite.xml
-	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
-	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:84)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:202)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:143)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:178)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+</pre></div><a href='#' onClick='toggleBox("stack-trace685558284", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace685558284'><pre>org.testng.TestNGException: 
+Method public void com.inetBanking.testCases.TC_LoginDDT_002.loginDDT(java.lang.String,java.lang.String) requires a @DataProvider named : LoginData
+	at org.testng.internal.Parameters.findDataProvider(Parameters.java:263)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:419)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1243)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:992)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1082)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
 	at org.testng.TestRunner.privateRun(TestRunner.java:778)
 	at org.testng.TestRunner.run(TestRunner.java:632)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
@@ -129,33 +127,7 @@ in C:\Users\vasant\AppData\Local\Temp\testng-eclipse-1505215046\testng-customsui
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
 </pre></div></td>
 <td>0</td>
-<td>com.inetBanking.testCases.TC_LoginTest_001@68c4039c</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.inetBanking.testCases.TC_LoginTest_001.tearDown()'><b>tearDown</b><br>Test class: com.inetBanking.testCases.TC_LoginTest_001</td>
-<td></td>
-<td>0</td>
-<td>com.inetBanking.testCases.TC_LoginTest_001@68c4039c</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.inetBanking.testCases.TC_LoginTest_001.loginTest()'><b>loginTest</b><br>Test class: com.inetBanking.testCases.TC_LoginTest_001</td>
-<td></td>
-<td>0</td>
-<td>com.inetBanking.testCases.TC_LoginTest_001@68c4039c</td></tr>
+<td>com.inetBanking.testCases.TC_LoginDDT_002@42d80b78</td></tr>
 </table><p>
 </body>
 </html>
